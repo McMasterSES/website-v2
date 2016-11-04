@@ -1,0 +1,2 @@
+class LoveLetter < ApplicationRecord
+end

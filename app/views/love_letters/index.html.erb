@@ -1,0 +1,10 @@
+<h1>All Love Letters for Rakesh 😍</h1>
+
+<% @letters.each do |letter| %>
+  <li>
+    <%= link_to letter.title, love_letter_path(letter) %>
+  </li>
+<% end %>
+
+<h1>Submit a new love letter for Rakesh</h1>
+<%= link_to 'New letter', new_love_letter_path %>
