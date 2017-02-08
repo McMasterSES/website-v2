@@ -1,2 +1,0 @@
-class LoveLetter < ApplicationRecord
-end
