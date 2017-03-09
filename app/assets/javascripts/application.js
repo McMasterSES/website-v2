@@ -14,3 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require jquery.dropotron.min
+//= require jquery.scrollgress.min
+//= require jquery.scrolly.min
+//= require skel.min

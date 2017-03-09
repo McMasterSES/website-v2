@@ -1,1 +1,27 @@
-Temp
+<section id="banner">
+    <%= render partial: "banner" %>
+</section>
+
+<article id="main">
+
+    <section class="wrapper style1 container special">
+        <%= render partial: "about" %>
+    </section>
+
+    <section class="wrapper style2 container special-alt">
+        <%= render partial: "upcoming" %>
+    </section>
+
+    <section class="wrapper style3 container special">
+        <%= render partial: "events" %>
+    </section>
+
+    <section id="cta">
+        <%= render partial: "contact" %>
+    </section>
+
+</article>
+
+<footer id="footer" class="alt">
+    <%= render partial: "footer" %>
+</footer>
