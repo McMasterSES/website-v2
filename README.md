@@ -3,5 +3,5 @@
 - `cd` into the repo
 - `bundle install`
 - `rails server`
-- To run migrations: `rake db:migrate`
+- To run migrations: `rails db:migrate`
 - head over to `localhost:3000` on your browser ✨
