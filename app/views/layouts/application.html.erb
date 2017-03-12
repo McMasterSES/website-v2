@@ -1,24 +1,43 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+  Twenty by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
   <head>
-    <title>WebsiteV2</title>
+    <title>McMaster Software Engineering Club</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'skel.min' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'jquery.scrolly.min' %>
+    <%= javascript_include_tag 'jquery.dropotron.min' %>
+    <%= javascript_include_tag 'jquery.scrollgress.min' %>
   </head>
+  <body class="index">
+    <div id="page-wrapper">
 
-  <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+      <%= yield %>
 
-    <% if user_signed_in? %>
-      <li><%= link_to 'Account', edit_user_registration_path %></li>
-      <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
-    <% else %>
-      <li><%= link_to 'Sign up', new_user_registration_path %></li>
-      <li><%= link_to 'Sign in', new_user_session_path %></li>
-    <% end %>
+      <footer id="footer" class="alt">
+        <ul class="icons">
+          <li><a href="https://twitter.com/SEClubMac" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+          <li><a href="https://www.facebook.com/mcmasterSEC/" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+          <li><a href="https://www.instagram.com/seclubmac/" class="icon circle fa-instagram"><span class="label">Instagram</span></a></li>
+          <li><a href="https://github.com/McMasterSEC" class="icon circle fa-github"><span class="label">Github</span></a></li>
+          <li><a href="mailto:sec@mcmaster.ca" class="icon circle fa-envelope-o"><span class="label">Email</span></a></li>
+        </ul>
+
+        <ul class="copyright">
+          <li>&copy; McMaster Software Engineering Club</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </footer>
+
+    </div>
   </body>
 </html>
