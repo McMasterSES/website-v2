@@ -1,0 +1,18 @@
+<h1>All exec promotion requests</h1>
+
+<table>
+<thead>
+    <tr>
+        <th>User ID</th>
+        <th>Reason</th>
+    </tr>
+</thead>
+<tbody>
+    <% @exec_promotions.each do |promotion| %>
+        <tr>
+            <td><%= promotion.user_id %></td>
+            <td><%= promotion.reason %></td>
+        </tr>
+    <% end %>
+</tbody>
+</table>
