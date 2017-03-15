@@ -46,7 +46,7 @@
 </div>
 
 <div>
-  <% if !current_user.is_exec %>
+  <% if !current_user.is_exec && !pending_requests(current_user) %>
     <%= render partial: "exec_promotions/request_promotion" %>
   <% end %>
 </div>
