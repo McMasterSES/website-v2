@@ -1,0 +1,2 @@
+class ExecPromotion < ApplicationRecord
+end
